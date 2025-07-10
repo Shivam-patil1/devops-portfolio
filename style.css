@@ -49,6 +49,22 @@ button {
   --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Custom accent and glow styles */
+.hero-glow {
+  text-shadow: 0 2px 16px rgba(100,255,218,0.2), 0 1.5px 0 #fff;
+}
+.button-glow {
+  box-shadow: 0 4px 32px 0 rgba(100,255,218,0.25), 0 1.5px 0 #fff;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.button-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 48px 0 rgba(100,255,218,0.35), 0 2px 0 #fff;
+}
+.section-gradient {
+  background: linear-gradient(135deg, var(--color-bg) 60%, #112240 100%);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
